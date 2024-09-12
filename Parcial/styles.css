@@ -1,23 +1,8 @@
 body {
-    margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: #a31717;
     color: white;
     padding: 0;
-}
-
-h1, h2, h3, p {
-    margin: 0;
-}
-
-section {
-    padding: 60px 20px;
-}
-
-.container {
-    max-width: 1076px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .navbar {
@@ -26,25 +11,25 @@ section {
     align-items: center;
     padding: 20px;
     background-color: transparent;
-    max-width: 75%;
+    max-width: 1060px;
     margin: 0 auto;
 }
-
 .logo {
     margin-right: auto;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-
 .nav-links li a {
     text-decoration: none;
     color: white;
 }
-
+.nav-links li a:hover {
+    text-decoration: none;
+    color: black;
+}
 .hamburger {
     display: none;
     font-size: 30px;
@@ -61,24 +46,20 @@ section {
     margin: 0 auto;
     padding: 80px 0;
 }
-
 .hero-text {
     max-width: 50%;
     text-align: left;
 }
-
 .hero-text h1 {
     font-size: 48px;
     line-height: 56px;
     font-weight: 400;
     margin-bottom: 10px;
 }
-
 .hero-text p {
     font-size: 16px;
     line-height: 24px;
 }
-
 .hero-text button {
     background-color: #3f3434;
     color: white;
@@ -86,9 +67,12 @@ section {
     border: none;
     margin-top: 20px;
 }
-
 .hero-image img {
     width: 100%;
+    display: block;
+}
+.HeroI-MB {
+    display: none;
 }
 
 /* COMPANIES */
@@ -96,13 +80,11 @@ section {
 .companies {
     text-align: center;
 }
-
 .companies-text {
     color: #667085;
     font-size: 16px;
     margin-bottom: 20px;
 }
-
 .logo-container {
     display: flex;
     justify-content: space-around;
@@ -112,6 +94,7 @@ section {
     margin: 0 auto;
     border-radius: 12px
 }
+
 
 /* BRANDING  */
 
@@ -123,35 +106,29 @@ section {
     margin: 0 auto;
     padding: 60px 20px;
 }
-
 .branding-image img {
     width: 100%;
 }
-
 .branding-text {
     max-width: 50%;
     text-align: left;
 }
-
 .branding-text h2 {
     font-size: 40px;
     line-height: 42px;
     color: white;
     margin-bottom: 20px
 }
-
 .branding-text p {
     font-size: 16px;
     line-height: 24px;
     color: white;
 }
-
 .custom-plugin-development {
     text-align: center;
     max-width: 1052px;
     margin: 0 auto;
 }
-
 .custom-plugin-development h2 {
     text-align: center;
     max-width: 1052px;
@@ -159,7 +136,6 @@ section {
     line-height: 40px;
     margin-bottom: 140px
 }
-
 .mobile-text-development {
     display: none;
 }
@@ -172,7 +148,6 @@ section {
     gap: 20px;
     padding: 40px 0;
 }
-
 .card {
     background-color: white;
     padding: 20px;
@@ -180,16 +155,13 @@ section {
     width: 32%;
     text-align: left;
 }
-
 .card h3 {
     color: #331b3b;
     margin-bottom: 10px;
 }
-
 .card p {
     color: #79697e;
 }
-
 .icon-back {
     width: 60px; 
     height: 60px;  
@@ -199,23 +171,18 @@ section {
     border-radius: 10px; 
     margin-bottom: 10px;
 }
-
 .card:nth-child(1) .icon-back {
     background-color: #ffded4;
 }
-
 .card:nth-child(2) .icon-back {
     background-color: #ffeed4;
 }
-
 .card:nth-child(3) .icon-back {
     background-color: #d4f0ff;
 }
-
 .card-icon {
     width: 40px;
 }
-
 .mobile-text-deve{
     display: none;
 }
@@ -235,7 +202,6 @@ section {
     border-radius: 20px;
     margin-bottom: 140px;
 }
-
 .customer-section h2 {
     font-size: 40px;
     color: white;
@@ -243,7 +209,6 @@ section {
     margin: auto; 
     padding: 10px; 
 }
-
 .customer-section p {
     font-size: 16px;
     margin-top: 10px;
@@ -251,7 +216,6 @@ section {
     max-width: 360px; 
     margin: auto; 
 }
-
 .customer-section button {
     background-color: #a31717;
     color: white;
@@ -262,6 +226,8 @@ section {
     border-radius: 5px
 }
 
+/* FOOTER */
+
 footer {
     background-color: #857978;
     color: white;
@@ -269,7 +235,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 .footer-columns {
     display: flex;
     justify-content: space-between; 
@@ -277,21 +242,18 @@ footer {
     width: 100%; 
     padding: 0 40px; 
 }
-
 .column {
     flex: 1;
     min-width: 160px; 
     margin: 0 20px; 
     text-align: left; 
 }
-
 .column h4 {
     font-size: 16px;
     margin-bottom: 20px; 
     text-transform: uppercase;
     font-weight: bold; 
 }
-
 .column p {
     font-size: 14px;
     margin: 8px 0; 
@@ -303,6 +265,19 @@ footer {
 /* MOBILE */
 
  @media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: transparent;
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -315,16 +290,21 @@ footer {
     }
 
     .nav-links.active {
-        display: flex; 
+        display: flex;
+         
     }
-
     .nav-links li {
         padding: 15px 0; 
     }
-
+    .nav-links li a:hover {
+        text-decoration: none;
+        color: black;
+    }
     .hamburger {
         display: block; 
     }
+
+    /* HERO SECTION */
 
     .hero {
         flex-direction: column; 
@@ -339,6 +319,11 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .hero-text h1{
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+    } 
     .hero-text button {
         background-color:black;
         border-radius: 5px;
@@ -347,28 +332,58 @@ footer {
         border: none;
         margin-top: 20px;
     }  
-
+    .HeroI-MB {
+        display: block;
+        width: 100%; 
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-image {
+        display: none;
+    }
+
+    /* CONTAINER LOGOS */
+
+    .logo-container {
+        display: flex;
+        background-color: #331b3b;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        margin: 10px;
+    }
+    .logo-container img{
+        width: 60px;
+        height: 34px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    /* BRANDING */
+
+    .branding {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        padding: 20px; 
+    }
+    .branding-text  {
+        max-width: 100%; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .branding-image img {
         width: 80%; 
         margin-top: 20px; 
     }
 
-    .customer-section {
-        background-color: #331b3b;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        max-width: 370px;
-        min-height: 300px;
-        margin: 20px;
-        border-radius: 20px;
-        margin-bottom: 40px;
-    }
-    
-    .customer-section .cta-text {
-        max-width: 100%;
-        max-height: 100%;
-    }
+    /* CARDS */
+
     .container-cards {
         flex-direction: column;
         align-items: center;
@@ -393,13 +408,7 @@ footer {
         display: block;
         font-size: 15px;
         margin-bottom: 20px 
-    }
-    .customer-section .customer-image {
-        display: none;
-    }
-    .customer-section button {
-        background-color: black;
-    }     
+    }   
     .container-cards .card:nth-child(3) {
         display: none;
     } 
@@ -407,77 +416,61 @@ footer {
         background-color: white;
         padding: 10px;
         border-radius: 12px;
-        width: 94%;
+        width: 80%;
         text-align: left;
     }
-
     .container-cards {
         display: flex;
         justify-content: space-between;
         padding: 10px;
-    }
-
-    section {
-        padding: 10px 10px;
-    }
-
-    .branding {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-        padding: 20px; 
-    }
-
-    .branding-text  {
-        max-width: 100%; 
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .branding-image img {
-        width: 80%; 
-        margin-top: 20px; 
-    }
-
-    .logo-container {
-        display: flex;
-        background-color: #331b3b;
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: 380x;
-        min-height: 120;
-        border-radius: 12px
-    }
-    .logo-container img{
-        width: 60px;
-        height: auto;
-    }
+    } 
     
+    /* CUSTOMER */
+
+    .customer-section {
+        background-color: #331b3b;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 370px;
+        min-height: 300px;
+        margin: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .customer-text h2{
+        font-size: 32px;
+        padding-bottom: 30px;
+    } 
+    .customer-section .customer-image {
+        display: none;
+    }
+    .customer-section button {
+        background-color: black;
+    } 
+
+    /* FOOTER */
+
     footer {
         background-color: #331b3b;
         color: white;
-        padding: 40px 0;
         text-align: center;
         display: flex;
     }
-    
     .footer-columns {
         display: flex;
         flex-direction: column; 
         align-items: center; 
         text-align: center;
     }
-
     .footer-columns .column h4, 
     .footer-columns .column p{
         text-align: center;
-    }
-    
+    }   
     .footer-message {
         display: block;
         margin-top: 20px;
         font-size: 12px;
         color: white;
     }
-
  }
